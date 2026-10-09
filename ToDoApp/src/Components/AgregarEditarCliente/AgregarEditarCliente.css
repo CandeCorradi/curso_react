@@ -1,0 +1,69 @@
+/* Contenedor del fondo oscuro */
+.AgregarEditarCliente {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* El contenido interno de la tarjeta */
+.AgregarEditarCliente .MuiCard-root {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.AgregarEditarCliente .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+}
+
+/* Título */
+.AgregarEditarCliente h2 {
+  margin: 0 0 12px 0;
+  text-align: center;
+  color: #1f2937;
+  font-size: 1.4rem;
+}
+
+/* Labels */
+.AgregarEditarCliente label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: -6px;
+}
+
+/* Inputs en columna y con buen aspecto */
+.AgregarEditarCliente input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  background-color: #ffffff;
+  color: #111827;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.AgregarEditarCliente input:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.2);
+}
+
+/* Botones de acción */
+.AgregarEditarCliente .MuiCardActions-root {
+  padding: 0 24px 24px 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
